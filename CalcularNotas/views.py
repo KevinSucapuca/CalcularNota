@@ -1,4 +1,5 @@
 from django.shortcuts import render
+import math
 
 def home(request):
     nota = None
@@ -16,9 +17,15 @@ def home(request):
                 nota = float(nota_raw)
 
                 if opcion == 'opcion1':
-                    resultado = (100 * nota) / 20
+                    if nota >= 0 and nota <= 20:
+                        resultado = round((100 * nota) / 20)
+                    else:
+                        error = "La nota ingresada debe estar entre 0 y 20"
                 elif opcion == 'opcion2':
-                    resultado = (20 * nota) / 100
+                    if nota >= 0 and nota <= 100:
+                        resultado = round((20 * nota) / 100, 2)
+                    else:
+                        error = "La nota ingresada debe estar entre 0 y 100"
                 else:
                     error = "Por favor, seleccione una opción"
             except ValueError:

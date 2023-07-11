@@ -18,7 +18,7 @@
 
     <header class="header">
         
-        <a href="index.html">KevinSucapuca </a>
+        <a href="{% url 'home' %}"">KevinSucapuca </a>
         
     
     </header>
@@ -50,10 +50,10 @@
     
                 <div class="txtb">
                     {% if error %}
-                    <p class="Mensajeerror">{{ error }}</p>
+                    <p class="Mensaje">{{ error }}</p>
                     {% else %}
-                    <label for="resultado">Resultado:</label>
-                    <label id="resultado" class="resultado-nota">{{ resultado }}</label>
+                    <label class="labelResultado" >Resultado:</label>
+                    <label class="Mensaje">{{ resultado }}</label>
                     {% endif %}
                 </div>
     

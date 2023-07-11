@@ -128,8 +128,10 @@ body{
   height: 13px;
   
 }
-.Mensajeerror{
+.Mensaje{
   color: #fff;
-  
-  
+}
+
+.labelResultado{
+  color: #32d1d1;
 }
