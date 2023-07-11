@@ -9,7 +9,8 @@
     text-decoration: none;
     transition: all .2s linear;
 }
-  
+
+
 body{
     min-height: 100vh;
     background: #436d70;
@@ -105,6 +106,7 @@ body{
     cursor: pointer;
     transition: .5s;
     margin-top: 60px;
+    font-size: 19px;
   }
   
   .logbtn:hover{
@@ -134,4 +136,36 @@ body{
 
 .labelResultado{
   color: #32d1d1;
+}
+
+
+@media only screen and (max-width: 600px) {
+  /* Estilos para pantallas con un ancho máximo de 600px, como dispositivos móviles */
+  .Calcular-form {
+    width: 90%; 
+    padding: 40px 20px; 
+  }
+  
+  .Calcular-form h1 {
+    font-size: 20px; 
+    margin-bottom: 20px;
+  }
+  
+  .txtb {
+    margin: 20px 0; /
+  }
+  
+  .logbtn {
+    font-size: 16px; 
+    margin-top: 60px; 
+  }
+
+  .bg-design {
+    width: 100%;
+    height: 76vh;
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7));
+    background-size: cover;
+    background-position: center;
+}
+
 }
