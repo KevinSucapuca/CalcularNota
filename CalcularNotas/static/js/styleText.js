@@ -7,3 +7,4 @@ $(".txtb input").on("blur",function(){
     $(this).removeClass("focus");
 });
 
+
